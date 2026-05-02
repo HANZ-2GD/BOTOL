@@ -721,9 +721,9 @@ async function Solving(HANZ, RAEHANDATA) {
 		return hasil
 	}
 	
-
+/*
 		const botNumber = HANZ.decodeJid(HANZ.user.id);
-	/*	if (BossRAEHAN?.set[botNumber]) {
+	if (BossRAEHAN?.set[botNumber]) {
 			HANZ.public = BossRAEHAN.set[botNumber].public
 		}*/
 		
