@@ -131,7 +131,7 @@ const HANZ = async (HANZ, m, msg, RAEHANDATA) => {
 		
 	    ////////////////////////𝙃𝘼𝙉𝙕///2𝙂𝘿////////////////////////////
 		if (m.isBot) return
-		//if (BossRAEHAN.users[m.sender]?.ban && !isCreator) return
+		if (BossRAEHAN.users[m.sender]?.ban && !isCreator) return
 	    ////////////////////////𝙃𝘼𝙉𝙕///2𝙂𝘿////////////////////////////		
 
 		
@@ -889,7 +889,20 @@ let { key } = await HANZ.sendMessage(m.chat, { text: 'LOADING SCRIPT RAEHAN' }, 
 			
 			
 			
-			
+case 'toptv': {
+				if (!/video/.test(mime)) return m.reply(`Kirim/Reply Video Yang Ingin Dijadikan PTV Message Dengan Caption ${prefix + command}`)
+				if ((m.quoted ? m.quoted.type : m.type) === 'videoMessage') {
+					
+					let media = await HANZ.downloadAndSaveMediaMessage(qmsg);
+					try {
+						const message = await generateWAMessageContent({ video: { url: media } }, { upload: HANZ.waUploadToServer })
+						await HANZ.relayMessage(m.chat, { ptvMessage: message.videoMessage }, {})
+					} finally {
+						if (fs.existsSync(media)) fs.unlinkSync(media)
+					}
+				} else m.reply('Reply Video Yang Mau Di Ubah Ke PTV Message!')
+			}
+			break			
 			
 			
 			
