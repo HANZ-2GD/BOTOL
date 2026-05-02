@@ -22,7 +22,7 @@ const ROOT_DIR = process.cwd();
 const WHITELIST = [
 	'node_modules',
 	'database',
-	'nazedev',
+	'HANZ',
 	'.env',
 	'HAN_EDIT.js'
 ];
