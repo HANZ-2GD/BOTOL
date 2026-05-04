@@ -783,7 +783,7 @@ let { key } = await HANZ.sendMessage(m.chat, { text: 'LOADING SCRIPT RAEHAN' }, 
 			await sleep(100); // Jeda sebentar sebelum menu aslinya muncul				
 				const nmrnya = text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.sender
 				const onWa = await HANZ.onWhatsApp(nmrnya)
-				if (!onWa.length > 0) return m.reply('tunggu sebentar')
+				if (!onWa.length > 0) return m.reply('pakai .jadibot  bukan  . jadibot')
 				await JadiBot(HANZ, nmrnya, m, RAEHANDATA)
 				m.reply(`Gunakan ${prefix}stopjadibot\nUntuk Berhenti\n\n\nTunggu Sebentar\nmenyiapkan kode\nKode pairing WhatsApp
 👇👇👇`)
@@ -813,6 +813,8 @@ let { key } = await HANZ.sendMessage(m.chat, { text: 'LOADING SCRIPT RAEHAN' }, 
 
 			await sleep(100); // Jeda sebentar sebelum menu aslinya muncul
 				const nmrnya = text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.sender
+				const onWa = await HANZ.onWhatsApp(nmrnya)
+				if (!onWa.length > 0) return m.reply(pakai .jadibot  bukan . jadibot)
 				const onWa = await HANZ.onWhatsApp(nmrnya)
 				await StopJadiBot(HANZ, nmrnya, m)
 			}
