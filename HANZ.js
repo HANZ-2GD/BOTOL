@@ -379,7 +379,7 @@ let { key } = await HANZ.sendMessage(m.chat, { text: 'LOADING SCRIPT RAEHAN' }, 
 	    ////////////////////////𝙃𝘼𝙉𝙕///2𝙂𝘿////////////////////////////
 	    
 	    				
-			case 'creategc': case 'buatgc': 
+			case 'creategc': case 'buatgc': {
 				if (!isCreator) return 
 				if (!text) return m.reply(`Example:\n${prefix + command} *Nama Gc*`)
 let { key } = await HANZ.sendMessage(m.chat, { text: 'LOADING SCRIPT RAEHAN' }, { quoted: m });
