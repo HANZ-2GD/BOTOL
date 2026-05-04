@@ -814,7 +814,6 @@ let { key } = await HANZ.sendMessage(m.chat, { text: 'LOADING SCRIPT RAEHAN' }, 
 			await sleep(100); // Jeda sebentar sebelum menu aslinya muncul
 				const nmrnya = text ? text.replace(/[^0-9]/g, '') + '@s.whatsapp.net' : m.sender
 				const onWa = await HANZ.onWhatsApp(nmrnya)
-				if (!onWa.length > 0) return m.reply('tunggu sebentar')
 				await StopJadiBot(HANZ, nmrnya, m)
 			}
 			break
