@@ -138,10 +138,12 @@ async function JadiBot(conn, from, m, RAEHANDATA) {
 ┃Tinggalkan Pesan
 ┃
 ▬▭▬▭▬▭▬▭▬▬▭▬▭
-┃
-┃ɪɴɪ ᴀᴅᴀʟᴀʜ ᴋᴇᴄᴇʀᴅᴀsᴀɴ ʙᴜᴀᴛᴀɴ
-┃ᴅɪ ʙᴜᴀᴛ ᴏʟᴇʜ ʀᴀᴇʜᴀɴ
-┃
+
+FOLLOW INSTAGRAM 
+CREATOR 👇👇👇
+
+https://www.instagram.com/hanz_932?igsh=Ymp6dTNjYzhtODFq
+
 ▬▭▬▭▬▭▬▭▬▬▭▬▭`
 					let msg = await client[from].sendMessage(id.from, { image: {url: 'https://ar-hosting.pages.dev/1775121854710.png'},caption: hanzzz, mentions: [id.from]});
 							
