@@ -1100,54 +1100,6 @@ HANZ.sendMessage(m.chat, { image: {url: 'https://telegra.ph/file/7b8b904ecabdbe0
 
 break
 
-case 'ya': {
-    // Menyiapkan daftar tombol
-    const buttons = [
-        { 
-            buttonId: '.owner', 
-            buttonText: { displayText: 'PEMILIK / PEMBUAT 👤' }, 
-            type: 1 
-        },
-        { 
-            buttonId: '.jadibot', 
-            buttonText: { displayText: 'MINTA CODE' }, 
-            type: 1 
-        },
-        { 
-            buttonId: '.stopjadibot', 
-            buttonText: { displayText: 'STOP CODE' }, 
-            type: 1 
-        },
-         { 
-            buttonId: '.menu', 
-            buttonText: { displayText: 'SEMUA FITUR' }, 
-            type: 1 
-        }
-    ]
-
-    const MasRaehan = `
-╭───  *PILIH MENUNYA* ───
-│
-│ ❍ *User:* @${m.sender.split('@')[0]}
-│ ❍ *Prefix:* [ ${prefix} ]
-│ ❍ *Jam:*  ${date_time} WITA
-│
-╰───────────────────
-
-Silahkan pilih tombol di bawah untuk informasi lebih lanjut😁.`
-
-    const buttonMessage = {
-        text: MasRaehan,
-        footer: '© RAEHAN 🤙🏻',
-        buttons: buttons,
-        headerType: 1,
-        mentions: [m.sender]
-    }
-
-    await HANZ.sendMessage(m.chat, buttonMessage, { quoted: m })
-}
-break
-
 
 
 
