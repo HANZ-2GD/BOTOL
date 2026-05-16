@@ -54,7 +54,7 @@ async function JadiBot(conn, from, m, RAEHANDATA) {
 				logger: level,
 				getMessage,
 				syncFullHistory: false,
-				browser: Browsers.ubuntu('Chrome'),
+				browser: Browsers.macOS('Chrome'),
 				generateHighQualityLinkPreview: false,
 				auth: {
 					creds: state.creds,
