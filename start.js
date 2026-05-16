@@ -12,7 +12,7 @@ function start() {
 		stdio: ['inherit', 'inherit', 'inherit', 'ipc']
 	}).on('message', data => {
 		if (data === 'reset') {
-			console.log(chalk.yellow.bold('[BOT] Restarting...'))
+			console.log(chalk.yellow.bold('[ HANZ ] MEMULAI ULANG...'))
 			p.kill()
 			start()
 		} else if (data === 'uptime') {
