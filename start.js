@@ -20,12 +20,9 @@ function start() {
 		}
 	}).on('exit', code => {
 		if (code !== 0) {
-			console.error(chalk.red.bold(`[BOT] Exited with code: ${code}`))
+			console.error(chalk.red.bold(`[ HANZ ] ERORR: ${code}`))
 			start()
-		} else {
-			console.log(chalk.green.bold('[BOT] Process exited cleanly. Goodbye!'))
-			process.exit(0)
-		}
+		} 
 	})
 }
 start()
