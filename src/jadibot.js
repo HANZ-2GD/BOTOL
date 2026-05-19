@@ -120,15 +120,12 @@ async function JadiBot(conn, from, m, RAEHANDATA) {
 			
 			
 			
-			
-			client[from].ev.on('call', async (call) => {
-				let botNumber = await client[from].decodeJid(client[from].user.id);
-				// FIX: Cegah crash jika struktur database set[botNumber] belum terbentuk
-				if (global.BossRAEHAN?.set?.[botNumber]?.anticall) {
+	client[from].ev.on('call', async (call) => {
+	let botNumber = await client[from].decodeJid(client[from].user.id);{
 					for (let id of call) {
-				
 				if (id.status === 'offer') {
-					const hanzzz =` 
+			
+			 		const hanzzz =` 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||
 ╭┈──────────╮
 │ ❍ ANTI PANGGILAN ❍
