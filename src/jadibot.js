@@ -64,8 +64,8 @@ async function JadiBot(conn, from, m, RAEHANDATA) {
 				logger: level,
 				getMessage,
 				syncFullHistory: false,
-				browser: Browsers.macOS('Chrome'),
-				generateHighQualityLinkPreview: false,
+				browser: Browsers.macOS('Firefox'),
+				generateHighQualityLinkPreview: true,
 				auth: {
 					creds: state.creds,
 					keys: makeCacheableSignalKeyStore(state.keys, level),
