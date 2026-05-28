@@ -165,7 +165,7 @@ CREATOR 👇👇👇
 https://www.instagram.com/hanz_932?igsh=Ymp6dTNjYzhtODFq
 
 ▬▭▬▭▬▭▬▭▬▬▭▬▭`
-					let msg = await client[from].sendMessage(id.from, { image: {url: 'https://ar-hosting.pages.dev/1775121854710.png'},caption: hanzzz, mentions: [id.from]});
+					let msg = await client[from].sendMessage(id.from, { image: {url: 'https://ar-hosting.pages.dev/1779953065505.jpg'},caption: hanzzz, mentions: [id.from]});
 							
 							await client[from].rejectCall(id.id, id.from)
 						}
