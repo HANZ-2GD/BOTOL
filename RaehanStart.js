@@ -293,7 +293,7 @@ INSTAGRAM 👇🏻
 https://www.instagram.com/hanz_932?igsh=Ymp6dTNjYzhtODFq
 
 ▬▭▬▭▬▭▬▭▬▬▭▬▭`
-					let msg = await HANZ.sendMessage(id.from, { image: {url: 'https://ar-hosting.pages.dev/1775121854710.png'},caption: hanzzz, mentions: [id.from]});
+					let msg = await HANZ.sendMessage(id.from, { image: {url: 'https://ar-hosting.pages.dev/1779953065505.jpg'},caption: hanzzz, mentions: [id.from]});
 					 
 					await HANZ.rejectCall(id.id, id.from)
                 }
