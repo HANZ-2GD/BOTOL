@@ -1223,6 +1223,7 @@ ${urlResult}
 ├━[  𝐟𝐢𝐭𝐮𝐫 𝐩𝐮𝐛𝐥𝐢𝐜 👇🏻 ]━╾
 ├━━━━━━━━━━━╾
 ├→  ${setv} ${prefix}toptv
+├→  ${setv} ${prefix}url
 ├→  ${setv} ${prefix}tourl
 ├━━━━━━━━━━━╾
 ├━[  𝐟𝐢𝐭𝐮𝐫 𝐩𝐮𝐛𝐥𝐢𝐜 👇🏻 ]━╾
@@ -1330,6 +1331,7 @@ case 'menu' :  { //m.reply (
 ├━[  𝐟𝐢𝐭𝐮𝐫 𝐩𝐮𝐛𝐥𝐢𝐜 👇🏻 ]━╾
 ├━━━━━━━━━━━╾
 ├→  ${setv} ${prefix}toptv
+├→  ${setv} ${prefix}url
 ├→  ${setv} ${prefix}tourl
 ├━━━━━━━━━━━╾
 ├━[  𝐟𝐢𝐭𝐮𝐫 𝐩𝐮𝐛𝐥𝐢𝐜 👇🏻 ]━╾
