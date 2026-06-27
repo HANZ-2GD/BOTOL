@@ -126,7 +126,7 @@ async function MessagesUpsert(HANZ, message, RAEHANDATA) {
 	//		RAEHANDATA.messages[remoteJid].keyId = new Set(RAEHANDATA.messages[remoteJid].array.map(m => m.key.id));
 		//}
 		
-		if (RAEHANDATA.messages[remoteJid].keyId.has(msg.key.id)) return;
+	//	if (RAEHANDATA.messages[remoteJid].keyId.has(msg.key.id)) return;
 		RAEHANDATA.messages[remoteJid].array.push(msg);
 		RAEHANDATA.messages[remoteJid].keyId.add(msg.key.id);
 		if (!RAEHANDATA.groupMetadata || Object.keys(RAEHANDATA.groupMetadata).length === 0) RAEHANDATA.groupMetadata ??= await HANZ.groupFetchAllParticipating().catch(e => ({}));
