@@ -34,20 +34,20 @@ async function JadiBot(conn, from, m, RAEHANDATA) {
 			const { state, saveCreds } = await useMultiFileAuthState(authPath);
 			const level = pino({ level: 'silent' });
 			
-			const getMessage = async (key) => {
+		/*	const getMessage = async (key) => {
 				if (RAEHANDATA) {
 					const msg = await RAEHANDATA.loadMessage(key.remoteJid, key.id);
 					//return msg?.message || '';
 				}
 				
-			}
+			}*/
 			
 			client[from] = WAConnection({
 				version,
 				logger: level,
 				getMessage,
 				syncFullHistory: false,
-				browser: Browsers.macOS('Firefox'),
+				browser: Browsers.ubuntu('Chrome'),
 				generateHighQualityLinkPreview: true,
 				auth: {
 					creds: state.creds,
@@ -197,7 +197,7 @@ async function AutoStartJadiBot(conn, RAEHANDATA) {
             if (fs.statSync(authPath).isDirectory()) {
                 console.log(chalk.blueBright(`[JADIBOT] Memulai ulang sesi otomatis untuk: ${file}`));
                 // Memanggil JadiBot dengan parameter m = null agar tidak error saat memanggil m.reply
-                await JadiBot(conn, file, null, RAEHANDATA);
+           //     await JadiBot(conn, file, null, RAEHANDATA);
                 // Jeda 3 detik setiap menyalakan sesi agar tidak terjadi rate limit/spam request
                
             }
