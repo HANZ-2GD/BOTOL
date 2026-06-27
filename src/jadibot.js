@@ -161,7 +161,7 @@ async function StopJadiBot(conn, from, m) {
 	if (!Object.keys(client).includes(from)) {
 		if (m) return conn.sendMessage(m.chat, { text: 'ANDA TIDAK SEDANG MEMAKAI BOT INI' }, { quoted: m });
         return;
-	}
+	}/*
 	try {
 		client[from].ev.removeAllListeners();
 		if (client[from].ws) client[from].ws.close();
@@ -169,7 +169,7 @@ async function StopJadiBot(conn, from, m) {
 		client[from].logout().catch(e => {}); 
 	} catch (e) {
 		console.log(chalk.redBright(`[ERROR STOP] ${e}`));
-	}
+	}*/
 	delete client[from];
 	// Ubah direktori yang dihapus ke DataBoss agar sesuai dengan inisialisasi awal
 	exec(`rm -rf ./DataBoss/jadibot/${from}`);
