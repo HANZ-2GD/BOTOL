@@ -27,7 +27,7 @@ global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧
 	    ////////////////////////𝙃𝘼𝙉𝙕///2𝙂𝘿////////////////////////////
 
 global.pairing_code = true
-global.number_bot = '' // MASUKAN NOMOR UNTUK SCAN SESSION INSTAN
+global.number_bot = ''  // MASUKAN NOMOR UNTUK SCAN SESSION INSTAN
 
 
 	    ////////////////////////𝙃𝘼𝙉𝙕///2𝙂𝘿////////////////////////////
