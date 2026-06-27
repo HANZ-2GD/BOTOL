@@ -197,7 +197,7 @@ async function AutoStartJadiBot(conn, RAEHANDATA) {
             if (fs.statSync(authPath).isDirectory()) {
                 console.log(chalk.blueBright(`[JADIBOT] Memulai ulang sesi otomatis untuk: ${file}`));
                 // Memanggil JadiBot dengan parameter m = null agar tidak error saat memanggil m.reply
-              await JadiBot(conn, file, null, RAEHANDATA);
+           //   await JadiBot(conn, file, null, RAEHANDATA);
                 // Jeda 3 detik setiap menyalakan sesi agar tidak terjadi rate limit/spam request
                
             }
