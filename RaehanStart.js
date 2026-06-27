@@ -150,21 +150,21 @@ async function startHANZBot() {
     const HANZ = WAConnection({
         version,
         logger: level,
-        getMessage: async (key) => {
+       /* getMessage: async (key) => {
             if (global.MasRAEHAN) {
                 const msg = await global.loadMessage(key.remoteJid, key.id);
                // return msg?.message || undefined;
            }
             
-       },
+       },*/
        
-        syncFullHistory: false,
+        syncFullHistory: true,
         browser: Browsers.ubuntu('Chrome'),
         auth: {
             creds: state.creds,
             keys: makeCacheableSignalKeyStore(state.keys, level),
         },
-        msgRetryCounterCache
+       // msgRetryCounterCache
     });
     
 ////////////////////////𝙃𝘼𝙉𝙕///2𝙂𝘿////////////////////////////
