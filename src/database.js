@@ -32,24 +32,22 @@ const dataBase = (source) => {
 }
 
 const cmdAdd = (hit) => {
-	if (hit && !hit.totalcmd) {
-		hit.totalcmd = 0;
+	 {
+		hit.totalcmd = {};
 	}
-	if (hit && !hit.todaycmd) {
-		hit.todaycmd = 0;
+	 {
+		hit.todaycmd = {};
 	}
 	hit.totalcmd++;
 	hit.todaycmd++;
 }
 const cmdDel = (hit) => {
-	hit.todaycmd = 0
+	hit.todaycmd = {}
 }
 
 const cmdAddHit = (hit, feature) => {
-	if (hit && !hit[feature]) {
-		hit[feature] = 0;
-	}
-	if (hit) hit[feature]++;
+	
+		hit[feature] = {}; 
 }
 
 
