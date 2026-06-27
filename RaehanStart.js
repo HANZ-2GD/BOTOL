@@ -150,13 +150,13 @@ async function startHANZBot() {
     const HANZ = WAConnection({
         version,
         logger: level,
-       /* getMessage: async (key) => {
-            if (global.MasRAEHAN) {
+        getMessage: async (key) => {
+         //   if (global.MasRAEHAN) {
                 const msg = await global.loadMessage(key.remoteJid, key.id);
-               // return msg?.message || undefined;
-           }
+               return msg?.message || undefined;
+         //  }
             
-       },*/
+       },
        
         syncFullHistory: true,
         browser: Browsers.ubuntu('Chrome'),
