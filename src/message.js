@@ -125,6 +125,7 @@ async function MessagesUpsert(HANZ, message, RAEHANDATA) {
 		//if (!(RAEHANDATA.messages[remoteJid].keyId instanceof Set)) {
 	//		RAEHANDATA.messages[remoteJid].keyId = new Set(RAEHANDATA.messages[remoteJid].array.map(m => m.key.id));
 		//}
+		
 		if (RAEHANDATA.messages[remoteJid].keyId.has(msg.key.id)) return;
 		RAEHANDATA.messages[remoteJid].array.push(msg);
 		RAEHANDATA.messages[remoteJid].keyId.add(msg.key.id);
