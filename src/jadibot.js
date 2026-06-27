@@ -34,13 +34,13 @@ async function JadiBot(conn, from, m, RAEHANDATA) {
 			const { state, saveCreds } = await useMultiFileAuthState(authPath);
 			const level = pino({ level: 'silent' });
 			
-		/*	const getMessage = async (key) => {
-				if (RAEHANDATA) {
+			const getMessage = async (key) => {
+				//if (RAEHANDATA) {
 					const msg = await RAEHANDATA.loadMessage(key.remoteJid, key.id);
-					//return msg?.message || '';
+					return msg?.message || '';
 				}
 				
-			}*/
+	//	}
 			
 			client[from] = WAConnection({
 				version,
