@@ -158,7 +158,7 @@ async function startHANZBot() {
             
        },
        
-        syncFullHistory: true,
+        syncFullHistory: false,
         browser: Browsers.ubuntu('Chrome'),
         auth: {
             creds: state.creds,
